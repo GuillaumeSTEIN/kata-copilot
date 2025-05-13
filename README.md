@@ -2,6 +2,12 @@
 
 Ce projet est une application Angular générée avec [Angular CLI](https://github.com/angular/angular-cli) (v19.2.11).
 
+## Aperçu visuel
+
+| Accueil |
+|---|
+| ![Accueil](public/screenshots/home.png) |
+
 ## Démarrage rapide
 
 Installe les dépendances :
@@ -36,6 +42,7 @@ Ouvre ton navigateur sur [http://localhost:4200](http://localhost:4200).
 - `src/app/` : Composants Angular principaux
 - `src/assets/i18n/` : Fichiers de traduction (fr, en, de, pt)
 - `public/` : Fichiers statiques
+- `public/screenshots/` : Screenshots pour la documentation
 
 ## Fonctionnalités principales
 
