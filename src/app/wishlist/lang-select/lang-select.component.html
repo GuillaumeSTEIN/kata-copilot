@@ -1,0 +1,5 @@
+<select [value]="lang()" (change)="onChange($event)" class="px-2 py-1 border rounded text-sm">
+  @for (l of langs; track l) {
+    <option [value]="l.value">{{ l.label }}</option>
+  }
+</select>

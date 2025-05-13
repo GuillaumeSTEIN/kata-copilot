@@ -1,0 +1,13 @@
+<span class="font-medium mr-2">{{ 'sortBy' | translate }}</span>
+<button type="button" (click)="sort.emit('status-asc')"
+  [ngClass]="{'bg-blue-600 text-white': mode() === 'status-asc', 'bg-gray-200 text-gray-700': mode() !== 'status-asc'}"
+  class="px-3 py-1 rounded transition">{{ 'statusAsc' | translate }}</button>
+<button type="button" (click)="sort.emit('status-desc')"
+  [ngClass]="{'bg-blue-600 text-white': mode() === 'status-desc', 'bg-gray-200 text-gray-700': mode() !== 'status-desc'}"
+  class="px-3 py-1 rounded transition">{{ 'statusDesc' | translate }}</button>
+<button type="button" (click)="sort.emit('alpha-asc')"
+  [ngClass]="{'bg-blue-600 text-white': mode() === 'alpha-asc', 'bg-gray-200 text-gray-700': mode() !== 'alpha-asc'}"
+  class="px-3 py-1 rounded transition">{{ 'alphaAsc' | translate }}</button>
+<button type="button" (click)="sort.emit('alpha-desc')"
+  [ngClass]="{'bg-blue-600 text-white': mode() === 'alpha-desc', 'bg-gray-200 text-gray-700': mode() !== 'alpha-desc'}"
+  class="px-3 py-1 rounded transition">{{ 'alphaDesc' | translate }}</button>

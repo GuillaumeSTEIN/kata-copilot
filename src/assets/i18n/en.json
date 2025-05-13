@@ -1,0 +1,19 @@
+{
+  "wishlist": "My Wishlist",
+  "sortBy": "Sort by:",
+  "statusAsc": "Status ↑",
+  "statusDesc": "Status ↓",
+  "alphaAsc": "A → Z",
+  "alphaDesc": "Z → A",
+  "filter": "Filter:",
+  "todo": "To do",
+  "inProgress": "In progress",
+  "done": "Done",
+  "add": "Add",
+  "update": "Update",
+  "cancel": "Cancel",
+  "title": "Title",
+  "description": "Description",
+  "edit": "Edit",
+  "remove": "Remove"
+}

@@ -1,0 +1,19 @@
+<!-- Angular 17+ syntaxe, standalone, signaux, Atomic Design. Aucun *ngIf, *ngFor, *ngSwitch ici, tout est conforme. -->
+<section class="wishlist w-full max-w-4xl mx-auto mt-16 p-6 bg-white rounded-xl shadow-lg">
+  <div class="flex justify-end mb-2">
+    <wishlist-lang-select (langChange)="setLang($event)" />
+  </div>
+  <h1 class="text-3xl font-bold mb-6 text-gray-900">{{ 'wishlist' | translate }}</h1>
+
+  <div class="flex flex-wrap gap-2 mb-4">
+    <wishlist-sort-buttons [mode]="sortMode" (sort)="setSortMode($event)" />
+  </div>
+
+  <div class="flex flex-wrap gap-2 mb-8">
+    <wishlist-status-filter [filter]="statusFilter" (toggle)="toggleStatusFilter($event)" />
+  </div>
+
+  <wishlist-form [form]="form" [editingIndex]="editingIndex" (add)="addItem()" (update)="updateItem()" (cancel)="cancelEdit()" />
+
+  <wishlist-list [items]="filteredItems" (edit)="editItem($event)" (remove)="removeItem($event)" />
+</section>

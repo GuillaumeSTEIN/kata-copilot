@@ -1,0 +1,10 @@
+<span class="font-medium mr-2">{{ 'filter' | translate }}</span>
+<button type="button" (click)="toggle.emit('todo')"
+  [ngClass]="{'bg-blue-600 text-white': filter() && filter()!.has('todo'), 'bg-gray-200 text-gray-700': !(filter() && filter()!.has('todo'))}"
+  class="px-3 py-1 rounded transition">{{ 'todo' | translate }}</button>
+<button type="button" (click)="toggle.emit('in progress')"
+  [ngClass]="{'bg-yellow-500 text-white': filter() && filter()!.has('in progress'), 'bg-gray-200 text-gray-700': !(filter() && filter()!.has('in progress'))}"
+  class="px-3 py-1 rounded transition">{{ 'inProgress' | translate }}</button>
+<button type="button" (click)="toggle.emit('done')"
+  [ngClass]="{'bg-green-600 text-white': filter() && filter()!.has('done'), 'bg-gray-200 text-gray-700': !(filter() && filter()!.has('done'))}"
+  class="px-3 py-1 rounded transition">{{ 'done' | translate }}</button>
